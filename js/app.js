@@ -78,7 +78,23 @@
 	    	arrow: true
 	    });
 
-		
+		$('.map').gmap3({
+			map: {
+				options: {
+					maxZoom: 14 
+				}  
+			},
+			marker:{
+				address: "40 Sibley St, Detroit",
+				options: {
+					icon: new google.maps.MarkerImage(
+						"images/map-marker.png",
+						new google.maps.Size(43, 53, "px", "px")
+					)
+				}
+			}
+		},
+		"autofit" );
 
 	});
 
